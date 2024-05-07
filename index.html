@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerce</title>
+    <!-- Link to your CSS file -->
+    <link rel="stylesheet" href="Product.css">
+    <link rel="stylesheet" href="Library/bootstrap/css/bootstrap.css">
+</head>
+
+<body>
+
+    <section id="Mycart1" class="container-fluid">
+        <nav class="navbar bg-navbar p-1 mt-3">
+            <div class="dropdown">
+                <!-- Button with text for desktop -->
+                <button onclick="mycart()" class="text-end dropbtn show-desktop" id="cart-text">My Cart (0)</button>
+                <!-- Button with icon for mobile -->
+                <button onclick="mycart()" class="text-end dropbtn show-mobile" id="cart-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                        fill="currentColor" class="bi bi-cart3" viewBox="0 0 16 16">
+                        <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l.84 4.479 9.144-.459L13.89 4zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2" />
+                    </svg><small id="cart-count"> (0)</small>
+                </button>
+                <div id="myCartList" class="dropdown-content">
+                    <!-- Cart items will be dynamically added here -->
+                </div>
+            </div>   
+        </nav>
+    </section>
+
+    <section id="Product">
+    </section>
+
+    <script src="ProductAPI.js"></script>
+
+    <!-- CSS Styles -->
+    <style>
+        /* CSS for showing/hiding elements based on viewport size */
+    </style>
+</body>
+</html>
