@@ -47,6 +47,7 @@ let cart = [];
 const sizeCount = {};
 
 // Function to handle the "Add to Cart" button click
+// Function to handle the "Add to Cart" button click
 function handleAddToCart(product) {
     const selectedSize = document.querySelector('.size-btn.selected');
 
@@ -65,12 +66,17 @@ function handleAddToCart(product) {
         // Update the cart count
         updateCartCount();
 
+        // Clear the selected size display
+        const selectedSizeDisplay = document.getElementById('selectedSizeDisplay');
+        selectedSizeDisplay.textContent = '';
+
         // Prompt the user that the item has been added to the cart
         alert('Item successfully added to the cart!');
     } else {
         alert('Please select a size.'); // Alert the user if no size is selected
     }
 }
+
 
 // Function to handle adding a product to the cart
 function addToCart(product) {
@@ -123,9 +129,9 @@ function updateCartHTML() {
                 
                 <!-- Details Column -->
                 <div class="col text-start"> <!-- Set to 6 columns for medium and small screens -->
-                    <p style="font-size: small; font-weight: 400;">${item.title}</p>
+                    <p style="font-size: small; font-weight: 500;">${item.title}</p>
                     <p style="font-size: small; font-weight: 500;">${sizeCount[item.selectedSize]}x <span style="font-size: small; font-weight: 700;">$${(item.price * sizeCount[item.selectedSize]).toFixed(2)}</span></p>
-                    <p style="font-size: small; font-weight: 400;">Size: ${item.selectedSize}</p>
+                    <p style="font-size: small; font-weight: 500;">Size: ${item.selectedSize}</p>
                     <i class="fa fa-trash" onclick="deleteItem(${index})"></i>
                 </div>
             </div>`;
@@ -147,7 +153,7 @@ fetch('https://3sb655pz3a.execute-api.ap-southeast-2.amazonaws.com/live/product'
                         <img src="${product.imageURL}">
                     </div>
 
-                    <!-- Third Column-->
+                    <!-- Second Column-->
                     <div class="detail col-md-6 col-sm-6 mt-5">
                         <div class="title">
                             <h5>${product.title}</h5>
@@ -158,11 +164,11 @@ fetch('https://3sb655pz3a.execute-api.ap-southeast-2.amazonaws.com/live/product'
                         </div>
 
                         <div class="description mt-4">
-                            <small>${product.description}</small>
+                            <p>${product.description}</p>
                         </div>
 
                         <div class="Sizes mt-4">
-                            <p>SIZE<small>*</small></p>
+                            <p>SIZE<small>*<a id="selectedSizeDisplay" style="font-weight:700; color:#222222;"> </small></p>
                             <div class="size-buttons">
                                 ${product.sizeOptions.map(option => `
                                     <button class="size-btn">${option.label}</button>
@@ -179,7 +185,7 @@ fetch('https://3sb655pz3a.execute-api.ap-southeast-2.amazonaws.com/live/product'
         // Set the generated HTML to the Product element
         document.getElementById('Product').innerHTML = html;
 
-        // Add event listener to the size buttons
+       // Add event listener to the size buttons
         const sizeButtons = document.querySelectorAll('.size-btn');
         sizeButtons.forEach(button => {
             button.addEventListener('click', () => {
@@ -187,8 +193,13 @@ fetch('https://3sb655pz3a.execute-api.ap-southeast-2.amazonaws.com/live/product'
                 sizeButtons.forEach(btn => btn.classList.remove('selected'));
                 // Add the 'selected' class to the clicked button
                 button.classList.add('selected');
+
+                // Update the selected size display
+                const selectedSizeDisplay = document.getElementById('selectedSizeDisplay');
+                selectedSizeDisplay.textContent = `${button.textContent}`;
             });
         });
+
 
         // Add event listener to the "Add to Cart" button
         document.getElementById('addToCartBtn').addEventListener('click', () => {
