@@ -1,4 +1,17 @@
-/* General styles */
+/* General styles
+Colour Schemes:
+
+Header background: #F6F6F7
+
+Font colour:  #222222 and #888888
+
+Required star *: #C90000
+
+Border light grey: #CCCCCC
+
+Border dark grey #222222
+ */
+
 .dropbtn {
     background-color: #3498db01;
     color: #888888;
@@ -51,11 +64,6 @@
   }
   
   
-  
-  
-  
-  
-  
   .dropdown-content a {
     color: black;
     padding: 12px 16px;
@@ -105,35 +113,40 @@
   }
   
   .Btn-cart button {
-    color: white;
-    font-size: small;
-    font-weight: 500;
-    background: #222222;
-    border: 1px solid #CCCCCC;
-    padding-left: 40px;
-    padding-right: 40px;
-    padding-top: 8px;
-    padding-bottom: 8px;
+    color: #222222;
+    font-size: 2vh;
+    font-weight: 700;
+    background-color:white;
+    border: 3px solid #222222;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 5px;
+    padding-bottom: 5px;
   }
   
   .Btn-cart button:hover {
-    background-color: white;
-    transition: background-color 2s;
-    color: #222222;
+    background: #222222;
+    transition: background-color 1s;
+    color: white;
     border: 2px solid #222222;
   }
   
-  .description {
+  .description p{
     color: #888888;
+    font-weight: 400;
+    font-size: small;
   }
   
-  .price bold {
+  .price strong {
     font-weight: bold;
     font-size: 1.8vh;
+    color:#222222;
+   
   }
   
   .title h5 {
     font-weight: 500;
+    color:#222222;
   }
   
   .product img {
@@ -149,9 +162,11 @@
   }
   
   .price {
+    padding-top: 5px;
+    padding-bottom: 5px;
     border-width: 1px 0px 1px 0;
     border-style: solid dotted inset double;
-    border-color: rgba(72, 70, 70, 0.597) rgba(0, 255, 0, 0) rgba(72, 70, 70, 0.597) rgba(0, 255, 0, 0);
+    border-color: #CCCCCC rgba(0, 255, 0, 0) #CCCCCC rgba(0, 255, 0, 0);
   }
   
   /* Media queries */
@@ -196,5 +211,20 @@
       padding-left: 0px;
       padding-right: 0px;
     }
+    .price {
+      border-width: 0px 0px 0px 0;
+      border-style: solid dotted inset double;
+    }
   }
   
+
+  #myCartList p {
+    color:#222222;
+    font-weight: 500;
+
+  }
+  #myCartList p i {
+    color:#222222;
+    font-weight: bold;
+
+  }
