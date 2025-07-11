@@ -39,4 +39,14 @@
     "imageURL": "https://fakestoreapi.com/img/71pWzhdJNwL._AC_UL640_QL65_ML3_.jpg",
     "sizeOptions": []
   }
+  {
+  "id": 6,
+  "title": "Half Sleeves T-shirt",
+  "description": "Comfortable cotton t-shirt with logo print",
+  "price": 29,
+  "category": "mens-shirts",
+  "images": ["https://i.dummyjson.com/data/products/51/1.jpg"],
+  "sizeOptions": ["S", "M", "L", "XL"]
+}
+
 ]
