@@ -40,9 +40,9 @@
     "price": 15.99,
     "imageURL": "https://fakestoreapi.com/img/71YXzeOuslL._AC_UY879_.jpg",
     "sizeOptions": [
-      { "label": "XS", "price": 14.0 },
-      { "label": "S", "price": 15.0 },
-      { "label": "M", "price": 16.5 },
+      { "label": "XS", "price": 15.99 },
+      { "label": "S", "price": 16.50 },
+      { "label": "M", "price": 17.5 },
       { "label": "L", "price": 18.0 }
     ]
   },
