@@ -1,161 +1,211 @@
-let products = [];
-let cart = [];
-let currentIndex = 0;
-const maxIndex = 4; // limit to 5 products (index 0 to 4)
-
-const productContainer = document.getElementById("Product");
-const cartList = document.getElementById("myCartList");
-const cartText = document.getElementById("cart-text");
-const cartCountIcon = document.getElementById("cart-count");
-
-const prevBtn = document.getElementById("prevProductBtn");
-const nextBtn = document.getElementById("nextProductBtn");
-
-function renderProduct(index) {
-  if (!products.length) return;
-  const product = products[index];
-
-  // Generate size buttons or disabled button if none
-  let sizesHTML = "";
-  if (product.sizeOptions && product.sizeOptions.length > 0) {
-    sizesHTML = product.sizeOptions.map(
-      size => `<button type="button" class="size-btn" data-size="${size.label}" data-price="${size.price}">${size.label}</button>`
-    ).join("");
-  } else {
-    sizesHTML = `<button type="button" disabled class="size-btn disabled">No sizes</button>`;
-  }
-
-  // Set default price for display
-  let displayPrice = product.price.toFixed(2);
-
-  productContainer.innerHTML = `
-    <div class="product-card">
-      <div class="product">
-        <img src="${product.imageURL}" alt="${product.title}" />
-      </div>
-      <div class="detail">
-        <h3>${product.title}</h3>
-        <p class="description">${product.description}</p>
-        <div class="bottom-column">
-          <p class="price"><strong>$${displayPrice}</strong></p>
-          <div class="Sizes">${sizesHTML}</div>
-          <div class="Btn-cart">
-            <button id="addToCartBtn" ${product.sizeOptions.length > 0 ? "disabled" : ""}>Add to Cart</button>
-          </div>
-        </div>
-      </div>
-    </div>
-  `;
-
-  let selectedSize = null;
-  let selectedPrice = product.price;
-
-  if (product.sizeOptions.length > 0) {
-    const sizeButtons = productContainer.querySelectorAll(".size-btn");
-    const addToCartBtn = document.getElementById("addToCartBtn");
-    const priceElement = productContainer.querySelector(".price strong");
-
-    sizeButtons.forEach(btn => {
-      btn.addEventListener("click", () => {
-        sizeButtons.forEach(b => b.classList.remove("selected"));
-        btn.classList.add("selected");
-        selectedSize = btn.getAttribute("data-size");
-        selectedPrice = parseFloat(btn.getAttribute("data-price"));
-        priceElement.textContent = `$${selectedPrice.toFixed(2)}`;
-        addToCartBtn.disabled = false;
-      });
-    });
-  }
-
-  const addToCartBtn = document.getElementById("addToCartBtn");
-  addToCartBtn.addEventListener("click", () => {
-    if (product.sizeOptions.length > 0 && !selectedSize) {
-      alert("Please select a size first!");
-      return;
-    }
-
-    const existingIndex = cart.findIndex(item => item.id === product.id && item.size === selectedSize);
-    if (existingIndex > -1) {
-      cart[existingIndex].quantity++;
-    } else {
-      cart.push({
-        id: product.id,
-        title: product.title,
-        price: selectedPrice,
-        size: selectedSize,
-        imageURL: product.imageURL,
-        quantity: 1
-      });
-    }
-
-    alert(`Added "${product.title}"${selectedSize ? ' (Size: ' + selectedSize + ')' : ''} to cart!`);
-
-    updateCartUI();
-  });
-
-  // Enable/disable navigation buttons
-  prevBtn.disabled = index === 0;
-  nextBtn.disabled = index === maxIndex;
-}
-
-function updateCartUI() {
-  let totalQuantity = cart.reduce((sum, item) => sum + item.quantity, 0);
-  cartText.textContent = `My Cart (${totalQuantity})`;
-  cartCountIcon.textContent = ` (${totalQuantity})`;
-
-  if (cart.length === 0) {
-    cartList.innerHTML = "<p>Your cart is empty.</p>";
-    return;
-  }
-
-  cartList.innerHTML = cart.map(item => `
-    <div class="cart-item">
-      <img src="${item.imageURL}" alt="${item.title}" />
-      <p>${item.title}${item.size ? ' - ' + item.size : ''}</p>
-      <p>Price: $${item.price.toFixed(2)}</p>
-      <p>Qty: ${item.quantity}</p>
-    </div>
-  `).join("");
-}
-
-nextBtn.addEventListener("click", () => {
-  if (currentIndex < maxIndex) {
-    currentIndex++;
-    renderProduct(currentIndex);
-  } else {
-    alert("You have reached the last product.");
-  }
-});
-
-prevBtn.addEventListener("click", () => {
-  if (currentIndex > 0) {
-    currentIndex--;
-    renderProduct(currentIndex);
-  } else {
-    alert("You are already at the first product.");
-  }
-});
-
-async function fetchProducts() {
-  try {
-    const response = await fetch('https://raw.githubusercontent.com/nelparole/Ecommerce-Product-API/main/api_ecommerce_products.json');
-    products = await response.json();
-
-    // Limit products to first 5
-    products = products.slice(0, 5);
-
-    renderProduct(currentIndex);
-  } catch (error) {
-    console.error("Error loading products:", error);
-  }
-}
-
-fetchProducts();
-
-// Optional: toggle cart dropdown visibility
 function mycart() {
-  const dropdown = document.getElementById("myCartList");
-  dropdown.classList.toggle("show");
+    const cartList = document.getElementById("myCartList");
+    const cartEmptyMessage = '<p class="pt-3 px-5">Hello, Your cart is empty. 😟</p>';
+
+    // Toggle the visibility of the cart list
+    cartList.classList.toggle("show");
+
+    // Check if the cart is empty
+    if (cart.length === 0) {
+        // Display a message if the cart is empty
+        cartList.innerHTML = cartEmptyMessage;
+    } else {
+        // Display the cart items if the cart is not empty
+        updateCartHTML();
+    }
 }
 
-window.mycart = mycart; // expose for inline onclick in HTML
+// Close window
+window.onclick = function (event) {
+    if (!event.target.matches('.dropbtn')) {
+        var dropdown = document.getElementsByClassName("dropdown-content")
+        var i;
+        for (i = 0; i < dropdown.length; i++) {
+            var openDropdown = dropdown[i];
+            if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+            }
+        }
+    }
+}
+
+// Function to update the cart count
+function updateCartCount() {
+    const cartCount = document.getElementById('cart-text');
+    const totalCount = cart.reduce((total, item) => total + item.quantity, 0);
+    cartCount.textContent = `My Cart (${totalCount})`;
+
+    // Update cart count for mobile view
+    const cartCountMobile = document.getElementById('cart-count');
+    cartCountMobile.textContent = `(${totalCount})`;
+}
+
+// Initialize an empty cart array to store products
+let cart = [];
+
+// Initialize an object to track the count of each size in the cart
+const sizeCount = {};
+
+// Function to handle the "Add to Cart" button click
+// Function to handle the "Add to Cart" button click
+function handleAddToCart(product) {
+    const selectedSize = document.querySelector('.size-btn.selected');
+
+    if (selectedSize) {
+        // Create a copy of the product with the selected size
+        const productToAdd = {
+            ...product,
+            selectedSize: selectedSize.textContent
+        };
+
+        addToCart(productToAdd); // Add the product to the cart
+
+        // Reset selected size button after adding to cart
+        selectedSize.classList.remove('selected');
+
+        // Update the cart count
+        updateCartCount();
+
+        // Clear the selected size display
+        const selectedSizeDisplay = document.getElementById('selectedSizeDisplay');
+        selectedSizeDisplay.textContent = '';
+
+        // Prompt the user that the item has been added to the cart
+        alert('Item successfully added to the cart!');
+    } else {
+        alert('Please select a size.'); // Alert the user if no size is selected
+    }
+}
+
+
+// Function to handle adding a product to the cart
+function addToCart(product) {
+    // Check if the product with the same size already exists in the cart
+    const existingProductIndex = cart.findIndex(item => item.id === product.id && item.selectedSize === product.selectedSize);
+
+    if (existingProductIndex !== -1) {
+        // If the product already exists, increment its quantity
+        cart[existingProductIndex].quantity++;
+    } else {
+        // If the product doesn't exist, add it to the cart
+        product.quantity = 1; // Add a quantity property to the product
+        cart.push(product);
+    }
+
+    // Increment the count for the selected size
+    if (sizeCount[product.selectedSize]) {
+        sizeCount[product.selectedSize]++;
+    } else {
+        sizeCount[product.selectedSize] = 1;
+    }
+
+    console.log('Product added to cart:', product);
+    updateCartHTML(); // Update the HTML content of the cart
+}
+
+// Function to update the HTML content of the "My Cart" section
+function updateCartHTML() {
+    const cartList = document.getElementById('myCartList');
+    cartList.innerHTML = ''; // Clear the existing content
+
+    // If the cart is empty, display a message
+    if (cart.length === 0) {
+        cartList.innerHTML = '';
+        return; // Exit the function early
+    }
+
+    // Loop through each item in the cart and generate HTML for it
+    cart.forEach((item, index) => {
+        const cartItem = document.createElement('div');
+        cartItem.classList.add('cart-item');
+
+        // Generate HTML for the item
+        cartItem.innerHTML = `
+            <div class="col-md-12 row p-3 mini-cart-detail">
+                <!-- Image Column -->
+                <div class="col"> <!-- Set to 6 columns for medium and small screens -->
+                    <img src="${item.imageURL}" alt="Product Image">
+                </div>
+                
+                <!-- Details Column -->
+                <div class="col text-start"> <!-- Set to 6 columns for medium and small screens -->
+                    <p style="font-size: small; font-weight: 500;">${item.title}</p>
+                    <p style="font-size: small; font-weight: 500;">${sizeCount[item.selectedSize]}x <span style="font-size: small; font-weight: 700;">$${(item.price * sizeCount[item.selectedSize]).toFixed(2)}</span></p>
+                    <p style="font-size: small; font-weight: 500;">Size: ${item.selectedSize}</p>
+                    <i class="fa fa-trash" onclick="deleteItem(${index})"></i>
+                </div>
+            </div>`;
+        
+        cartList.appendChild(cartItem); // Append the item HTML to the cart container
+    });
+}
+
+// Fetch product data from the API and display it
+fetch('https://3sb655pz3a.execute-api.ap-southeast-2.amazonaws.com/live/product')
+    .then(res => res.json())
+    .then(product => {
+        // Generate HTML for the single product
+        const html = `
+            <div class="container justify-content-center">
+                <div class="col-md-12 row">
+                    <!-- First Column -->
+                    <div class="product col-md-6 col-sm-6 mt-5">
+                        <img src="${product.imageURL}">
+                    </div>
+
+                    <!-- Second Column-->
+                    <div class="detail col-md-6 col-sm-6 mt-5">
+                        <div class="title">
+                            <h5>${product.title}</h5>
+                        </div>
+
+                        <div class="price mt-4">
+                            <strong>$${product.price.toFixed(2)}</strong>
+                        </div>
+
+                        <div class="description mt-4">
+                            <p>${product.description}</p>
+                        </div>
+
+                        <div class="Sizes mt-4">
+                            <p>SIZE<small>*<a id="selectedSizeDisplay" style="font-weight:700; color:#222222;"> </small></p>
+                            <div class="size-buttons">
+                                ${product.sizeOptions.map(option => `
+                                    <button class="size-btn">${option.label}</button>
+                                `).join('')}
+                            </div>
+                            <div class="Btn-cart mt-3 mb-5">
+                                <button id="addToCartBtn">ADD TO CART</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>`;
+
+        // Set the generated HTML to the Product element
+        document.getElementById('Product').innerHTML = html;
+
+       // Add event listener to the size buttons
+        const sizeButtons = document.querySelectorAll('.size-btn');
+        sizeButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                // Remove the 'selected' class from all buttons
+                sizeButtons.forEach(btn => btn.classList.remove('selected'));
+                // Add the 'selected' class to the clicked button
+                button.classList.add('selected');
+
+                // Update the selected size display
+                const selectedSizeDisplay = document.getElementById('selectedSizeDisplay');
+                selectedSizeDisplay.textContent = `${button.textContent}`;
+            });
+        });
+
+
+        // Add event listener to the "Add to Cart" button
+        document.getElementById('addToCartBtn').addEventListener('click', () => {
+            handleAddToCart(product); // Call handleAddToCart function when button is clicked
+        });
+    })
+    .catch(err => {
+        console.error(err);
+    });
