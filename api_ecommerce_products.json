@@ -1,0 +1,1104 @@
+[
+  {
+    "id": 1,
+    "title": "Denim Jacket",
+    "description": "Stylish outerwear made from premium denim.",
+    "price": 55,
+    "imageURL": "https://mrdevelopertestassets.s3.ap-southeast-2.amazonaws.com/denim-jacket.jpg",
+    "sizeOptions": [
+      {
+        "id": 1,
+        "label": "XS"
+      },
+      {
+        "id": 2,
+        "label": "S"
+      },
+      {
+        "id": 3,
+        "label": "M"
+      },
+      {
+        "id": 4,
+        "label": "L"
+      },
+      {
+        "id": 5,
+        "label": "XL"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Sports Shoes",
+    "description": "Breathable shoes ideal for sports and running.",
+    "price": 80,
+    "imageURL": "https://mrdevelopertestassets.s3.ap-southeast-2.amazonaws.com/sports-shoes.jpg",
+    "sizeOptions": [
+      {
+        "id": 1,
+        "label": "6"
+      },
+      {
+        "id": 2,
+        "label": "7"
+      },
+      {
+        "id": 3,
+        "label": "8"
+      },
+      {
+        "id": 4,
+        "label": "9"
+      },
+      {
+        "id": 5,
+        "label": "10"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Leather Wallet",
+    "description": "Sleek and compact wallet made with genuine leather.",
+    "price": 105,
+    "imageURL": "https://mrdevelopertestassets.s3.ap-southeast-2.amazonaws.com/leather-wallet.jpg",
+    "sizeOptions": []
+  },
+  {
+    "id": 4,
+    "title": "Classic Tee",
+    "description": "Comfortable and versatile, perfect for everyday wear.",
+    "price": 50,
+    "imageURL": "https://mrdevelopertestassets.s3.ap-southeast-2.amazonaws.com/classic-tee.jpg",
+    "sizeOptions": [
+      {
+        "id": 1,
+        "label": "S"
+      },
+      {
+        "id": 2,
+        "label": "M"
+      },
+      {
+        "id": 3,
+        "label": "L"
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "title": "Denim Jacket",
+    "description": "Stylish outerwear made from premium denim.",
+    "price": 50,
+    "imageURL": "https://mrdevelopertestassets.s3.ap-southeast-2.amazonaws.com/denim-jacket.jpg",
+    "sizeOptions": [
+      {
+        "id": 1,
+        "label": "XS"
+      },
+      {
+        "id": 2,
+        "label": "S"
+      },
+      {
+        "id": 3,
+        "label": "M"
+      },
+      {
+        "id": 4,
+        "label": "L"
+      },
+      {
+        "id": 5,
+        "label": "XL"
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "title": "Sports Shoes",
+    "description": "Breathable shoes ideal for sports and running.",
+    "price": 75,
+    "imageURL": "https://mrdevelopertestassets.s3.ap-southeast-2.amazonaws.com/sports-shoes.jpg",
+    "sizeOptions": [
+      {
+        "id": 1,
+        "label": "6"
+      },
+      {
+        "id": 2,
+        "label": "7"
+      },
+      {
+        "id": 3,
+        "label": "8"
+      },
+      {
+        "id": 4,
+        "label": "9"
+      },
+      {
+        "id": 5,
+        "label": "10"
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "title": "Leather Wallet",
+    "description": "Sleek and compact wallet made with genuine leather.",
+    "price": 100,
+    "imageURL": "https://mrdevelopertestassets.s3.ap-southeast-2.amazonaws.com/leather-wallet.jpg",
+    "sizeOptions": []
+  },
+  {
+    "id": 8,
+    "title": "Classic Tee",
+    "description": "Comfortable and versatile, perfect for everyday wear.",
+    "price": 45,
+    "imageURL": "https://mrdevelopertestassets.s3.ap-southeast-2.amazonaws.com/classic-tee.jpg",
+    "sizeOptions": [
+      {
+        "id": 1,
+        "label": "S"
+      },
+      {
+        "id": 2,
+        "label": "M"
+      },
+      {
+        "id": 3,
+        "label": "L"
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "title": "Denim Jacket",
+    "description": "Stylish outerwear made from premium denim.",
+    "price": 70,
+    "imageURL": "https://mrdevelopertestassets.s3.ap-southeast-2.amazonaws.com/denim-jacket.jpg",
+    "sizeOptions": [
+      {
+        "id": 1,
+        "label": "XS"
+      },
+      {
+        "id": 2,
+        "label": "S"
+      },
+      {
+        "id": 3,
+        "label": "M"
+      },
+      {
+        "id": 4,
+        "label": "L"
+      },
+      {
+        "id": 5,
+        "label": "XL"
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "title": "Sports Shoes",
+    "description": "Breathable shoes ideal for sports and running.",
+    "price": 70,
+    "imageURL": "https://mrdevelopertestassets.s3.ap-southeast-2.amazonaws.com/sports-shoes.jpg",
+    "sizeOptions": [
+      {
+        "id": 1,
+        "label": "6"
+      },
+      {
+        "id": 2,
+        "label": "7"
+      },
+      {
+        "id": 3,
+        "label": "8"
+      },
+      {
+        "id": 4,
+        "label": "9"
+      },
+      {
+        "id": 5,
+        "label": "10"
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "title": "Leather Wallet",
+    "description": "Sleek and compact wallet made with genuine leather.",
+    "price": 95,
+    "imageURL": "https://mrdevelopertestassets.s3.ap-southeast-2.amazonaws.com/leather-wallet.jpg",
+    "sizeOptions": []
+  },
+  {
+    "id": 12,
+    "title": "Classic Tee",
+    "description": "Comfortable and versatile, perfect for everyday wear.",
+    "price": 40,
+    "imageURL": "https://mrdevelopertestassets.s3.ap-southeast-2.amazonaws.com/classic-tee.jpg",
+    "sizeOptions": [
+      {
+        "id": 1,
+        "label": "S"
+      },
+      {
+        "id": 2,
+        "label": "M"
+      },
+      {
+        "id": 3,
+        "label": "L"
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "title": "Denim Jacket",
+    "description": "Stylish outerwear made from premium denim.",
+    "price": 65,
+    "imageURL": "https://mrdevelopertestassets.s3.ap-southeast-2.amazonaws.com/denim-jacket.jpg",
+    "sizeOptions": [
+      {
+        "id": 1,
+        "label": "XS"
+      },
+      {
+        "id": 2,
+        "label": "S"
+      },
+      {
+        "id": 3,
+        "label": "M"
+      },
+      {
+        "id": 4,
+        "label": "L"
+      },
+      {
+        "id": 5,
+        "label": "XL"
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "title": "Sports Shoes",
+    "description": "Breathable shoes ideal for sports and running.",
+    "price": 90,
+    "imageURL": "https://mrdevelopertestassets.s3.ap-southeast-2.amazonaws.com/sports-shoes.jpg",
+    "sizeOptions": [
+      {
+        "id": 1,
+        "label": "6"
+      },
+      {
+        "id": 2,
+        "label": "7"
+      },
+      {
+        "id": 3,
+        "label": "8"
+      },
+      {
+        "id": 4,
+        "label": "9"
+      },
+      {
+        "id": 5,
+        "label": "10"
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "title": "Leather Wallet",
+    "description": "Sleek and compact wallet made with genuine leather.",
+    "price": 90,
+    "imageURL": "https://mrdevelopertestassets.s3.ap-southeast-2.amazonaws.com/leather-wallet.jpg",
+    "sizeOptions": []
+  },
+  {
+    "id": 16,
+    "title": "Classic Tee",
+    "description": "Comfortable and versatile, perfect for everyday wear.",
+    "price": 35,
+    "imageURL": "https://mrdevelopertestassets.s3.ap-southeast-2.amazonaws.com/classic-tee.jpg",
+    "sizeOptions": [
+      {
+        "id": 1,
+        "label": "S"
+      },
+      {
+        "id": 2,
+        "label": "M"
+      },
+      {
+        "id": 3,
+        "label": "L"
+      }
+    ]
+  },
+  {
+    "id": 17,
+    "title": "Denim Jacket",
+    "description": "Stylish outerwear made from premium denim.",
+    "price": 60,
+    "imageURL": "https://mrdevelopertestassets.s3.ap-southeast-2.amazonaws.com/denim-jacket.jpg",
+    "sizeOptions": [
+      {
+        "id": 1,
+        "label": "XS"
+      },
+      {
+        "id": 2,
+        "label": "S"
+      },
+      {
+        "id": 3,
+        "label": "M"
+      },
+      {
+        "id": 4,
+        "label": "L"
+      },
+      {
+        "id": 5,
+        "label": "XL"
+      }
+    ]
+  },
+  {
+    "id": 18,
+    "title": "Sports Shoes",
+    "description": "Breathable shoes ideal for sports and running.",
+    "price": 85,
+    "imageURL": "https://mrdevelopertestassets.s3.ap-southeast-2.amazonaws.com/sports-shoes.jpg",
+    "sizeOptions": [
+      {
+        "id": 1,
+        "label": "6"
+      },
+      {
+        "id": 2,
+        "label": "7"
+      },
+      {
+        "id": 3,
+        "label": "8"
+      },
+      {
+        "id": 4,
+        "label": "9"
+      },
+      {
+        "id": 5,
+        "label": "10"
+      }
+    ]
+  },
+  {
+    "id": 19,
+    "title": "Leather Wallet",
+    "description": "Sleek and compact wallet made with genuine leather.",
+    "price": 110,
+    "imageURL": "https://mrdevelopertestassets.s3.ap-southeast-2.amazonaws.com/leather-wallet.jpg",
+    "sizeOptions": []
+  },
+  {
+    "id": 20,
+    "title": "Classic Tee",
+    "description": "Comfortable and versatile, perfect for everyday wear.",
+    "price": 30,
+    "imageURL": "https://mrdevelopertestassets.s3.ap-southeast-2.amazonaws.com/classic-tee.jpg",
+    "sizeOptions": [
+      {
+        "id": 1,
+        "label": "S"
+      },
+      {
+        "id": 2,
+        "label": "M"
+      },
+      {
+        "id": 3,
+        "label": "L"
+      }
+    ]
+  },
+  {
+    "id": 21,
+    "title": "Denim Jacket",
+    "description": "Stylish outerwear made from premium denim.",
+    "price": 55,
+    "imageURL": "https://mrdevelopertestassets.s3.ap-southeast-2.amazonaws.com/denim-jacket.jpg",
+    "sizeOptions": [
+      {
+        "id": 1,
+        "label": "XS"
+      },
+      {
+        "id": 2,
+        "label": "S"
+      },
+      {
+        "id": 3,
+        "label": "M"
+      },
+      {
+        "id": 4,
+        "label": "L"
+      },
+      {
+        "id": 5,
+        "label": "XL"
+      }
+    ]
+  },
+  {
+    "id": 22,
+    "title": "Sports Shoes",
+    "description": "Breathable shoes ideal for sports and running.",
+    "price": 80,
+    "imageURL": "https://mrdevelopertestassets.s3.ap-southeast-2.amazonaws.com/sports-shoes.jpg",
+    "sizeOptions": [
+      {
+        "id": 1,
+        "label": "6"
+      },
+      {
+        "id": 2,
+        "label": "7"
+      },
+      {
+        "id": 3,
+        "label": "8"
+      },
+      {
+        "id": 4,
+        "label": "9"
+      },
+      {
+        "id": 5,
+        "label": "10"
+      }
+    ]
+  },
+  {
+    "id": 23,
+    "title": "Leather Wallet",
+    "description": "Sleek and compact wallet made with genuine leather.",
+    "price": 105,
+    "imageURL": "https://mrdevelopertestassets.s3.ap-southeast-2.amazonaws.com/leather-wallet.jpg",
+    "sizeOptions": []
+  },
+  {
+    "id": 24,
+    "title": "Classic Tee",
+    "description": "Comfortable and versatile, perfect for everyday wear.",
+    "price": 50,
+    "imageURL": "https://mrdevelopertestassets.s3.ap-southeast-2.amazonaws.com/classic-tee.jpg",
+    "sizeOptions": [
+      {
+        "id": 1,
+        "label": "S"
+      },
+      {
+        "id": 2,
+        "label": "M"
+      },
+      {
+        "id": 3,
+        "label": "L"
+      }
+    ]
+  },
+  {
+    "id": 25,
+    "title": "Denim Jacket",
+    "description": "Stylish outerwear made from premium denim.",
+    "price": 50,
+    "imageURL": "https://mrdevelopertestassets.s3.ap-southeast-2.amazonaws.com/denim-jacket.jpg",
+    "sizeOptions": [
+      {
+        "id": 1,
+        "label": "XS"
+      },
+      {
+        "id": 2,
+        "label": "S"
+      },
+      {
+        "id": 3,
+        "label": "M"
+      },
+      {
+        "id": 4,
+        "label": "L"
+      },
+      {
+        "id": 5,
+        "label": "XL"
+      }
+    ]
+  },
+  {
+    "id": 26,
+    "title": "Sports Shoes",
+    "description": "Breathable shoes ideal for sports and running.",
+    "price": 75,
+    "imageURL": "https://mrdevelopertestassets.s3.ap-southeast-2.amazonaws.com/sports-shoes.jpg",
+    "sizeOptions": [
+      {
+        "id": 1,
+        "label": "6"
+      },
+      {
+        "id": 2,
+        "label": "7"
+      },
+      {
+        "id": 3,
+        "label": "8"
+      },
+      {
+        "id": 4,
+        "label": "9"
+      },
+      {
+        "id": 5,
+        "label": "10"
+      }
+    ]
+  },
+  {
+    "id": 27,
+    "title": "Leather Wallet",
+    "description": "Sleek and compact wallet made with genuine leather.",
+    "price": 100,
+    "imageURL": "https://mrdevelopertestassets.s3.ap-southeast-2.amazonaws.com/leather-wallet.jpg",
+    "sizeOptions": []
+  },
+  {
+    "id": 28,
+    "title": "Classic Tee",
+    "description": "Comfortable and versatile, perfect for everyday wear.",
+    "price": 45,
+    "imageURL": "https://mrdevelopertestassets.s3.ap-southeast-2.amazonaws.com/classic-tee.jpg",
+    "sizeOptions": [
+      {
+        "id": 1,
+        "label": "S"
+      },
+      {
+        "id": 2,
+        "label": "M"
+      },
+      {
+        "id": 3,
+        "label": "L"
+      }
+    ]
+  },
+  {
+    "id": 29,
+    "title": "Denim Jacket",
+    "description": "Stylish outerwear made from premium denim.",
+    "price": 70,
+    "imageURL": "https://mrdevelopertestassets.s3.ap-southeast-2.amazonaws.com/denim-jacket.jpg",
+    "sizeOptions": [
+      {
+        "id": 1,
+        "label": "XS"
+      },
+      {
+        "id": 2,
+        "label": "S"
+      },
+      {
+        "id": 3,
+        "label": "M"
+      },
+      {
+        "id": 4,
+        "label": "L"
+      },
+      {
+        "id": 5,
+        "label": "XL"
+      }
+    ]
+  },
+  {
+    "id": 30,
+    "title": "Sports Shoes",
+    "description": "Breathable shoes ideal for sports and running.",
+    "price": 70,
+    "imageURL": "https://mrdevelopertestassets.s3.ap-southeast-2.amazonaws.com/sports-shoes.jpg",
+    "sizeOptions": [
+      {
+        "id": 1,
+        "label": "6"
+      },
+      {
+        "id": 2,
+        "label": "7"
+      },
+      {
+        "id": 3,
+        "label": "8"
+      },
+      {
+        "id": 4,
+        "label": "9"
+      },
+      {
+        "id": 5,
+        "label": "10"
+      }
+    ]
+  },
+  {
+    "id": 31,
+    "title": "Leather Wallet",
+    "description": "Sleek and compact wallet made with genuine leather.",
+    "price": 95,
+    "imageURL": "https://mrdevelopertestassets.s3.ap-southeast-2.amazonaws.com/leather-wallet.jpg",
+    "sizeOptions": []
+  },
+  {
+    "id": 32,
+    "title": "Classic Tee",
+    "description": "Comfortable and versatile, perfect for everyday wear.",
+    "price": 40,
+    "imageURL": "https://mrdevelopertestassets.s3.ap-southeast-2.amazonaws.com/classic-tee.jpg",
+    "sizeOptions": [
+      {
+        "id": 1,
+        "label": "S"
+      },
+      {
+        "id": 2,
+        "label": "M"
+      },
+      {
+        "id": 3,
+        "label": "L"
+      }
+    ]
+  },
+  {
+    "id": 33,
+    "title": "Denim Jacket",
+    "description": "Stylish outerwear made from premium denim.",
+    "price": 65,
+    "imageURL": "https://mrdevelopertestassets.s3.ap-southeast-2.amazonaws.com/denim-jacket.jpg",
+    "sizeOptions": [
+      {
+        "id": 1,
+        "label": "XS"
+      },
+      {
+        "id": 2,
+        "label": "S"
+      },
+      {
+        "id": 3,
+        "label": "M"
+      },
+      {
+        "id": 4,
+        "label": "L"
+      },
+      {
+        "id": 5,
+        "label": "XL"
+      }
+    ]
+  },
+  {
+    "id": 34,
+    "title": "Sports Shoes",
+    "description": "Breathable shoes ideal for sports and running.",
+    "price": 90,
+    "imageURL": "https://mrdevelopertestassets.s3.ap-southeast-2.amazonaws.com/sports-shoes.jpg",
+    "sizeOptions": [
+      {
+        "id": 1,
+        "label": "6"
+      },
+      {
+        "id": 2,
+        "label": "7"
+      },
+      {
+        "id": 3,
+        "label": "8"
+      },
+      {
+        "id": 4,
+        "label": "9"
+      },
+      {
+        "id": 5,
+        "label": "10"
+      }
+    ]
+  },
+  {
+    "id": 35,
+    "title": "Leather Wallet",
+    "description": "Sleek and compact wallet made with genuine leather.",
+    "price": 90,
+    "imageURL": "https://mrdevelopertestassets.s3.ap-southeast-2.amazonaws.com/leather-wallet.jpg",
+    "sizeOptions": []
+  },
+  {
+    "id": 36,
+    "title": "Classic Tee",
+    "description": "Comfortable and versatile, perfect for everyday wear.",
+    "price": 35,
+    "imageURL": "https://mrdevelopertestassets.s3.ap-southeast-2.amazonaws.com/classic-tee.jpg",
+    "sizeOptions": [
+      {
+        "id": 1,
+        "label": "S"
+      },
+      {
+        "id": 2,
+        "label": "M"
+      },
+      {
+        "id": 3,
+        "label": "L"
+      }
+    ]
+  },
+  {
+    "id": 37,
+    "title": "Denim Jacket",
+    "description": "Stylish outerwear made from premium denim.",
+    "price": 60,
+    "imageURL": "https://mrdevelopertestassets.s3.ap-southeast-2.amazonaws.com/denim-jacket.jpg",
+    "sizeOptions": [
+      {
+        "id": 1,
+        "label": "XS"
+      },
+      {
+        "id": 2,
+        "label": "S"
+      },
+      {
+        "id": 3,
+        "label": "M"
+      },
+      {
+        "id": 4,
+        "label": "L"
+      },
+      {
+        "id": 5,
+        "label": "XL"
+      }
+    ]
+  },
+  {
+    "id": 38,
+    "title": "Sports Shoes",
+    "description": "Breathable shoes ideal for sports and running.",
+    "price": 85,
+    "imageURL": "https://mrdevelopertestassets.s3.ap-southeast-2.amazonaws.com/sports-shoes.jpg",
+    "sizeOptions": [
+      {
+        "id": 1,
+        "label": "6"
+      },
+      {
+        "id": 2,
+        "label": "7"
+      },
+      {
+        "id": 3,
+        "label": "8"
+      },
+      {
+        "id": 4,
+        "label": "9"
+      },
+      {
+        "id": 5,
+        "label": "10"
+      }
+    ]
+  },
+  {
+    "id": 39,
+    "title": "Leather Wallet",
+    "description": "Sleek and compact wallet made with genuine leather.",
+    "price": 110,
+    "imageURL": "https://mrdevelopertestassets.s3.ap-southeast-2.amazonaws.com/leather-wallet.jpg",
+    "sizeOptions": []
+  },
+  {
+    "id": 40,
+    "title": "Classic Tee",
+    "description": "Comfortable and versatile, perfect for everyday wear.",
+    "price": 30,
+    "imageURL": "https://mrdevelopertestassets.s3.ap-southeast-2.amazonaws.com/classic-tee.jpg",
+    "sizeOptions": [
+      {
+        "id": 1,
+        "label": "S"
+      },
+      {
+        "id": 2,
+        "label": "M"
+      },
+      {
+        "id": 3,
+        "label": "L"
+      }
+    ]
+  },
+  {
+    "id": 41,
+    "title": "Denim Jacket",
+    "description": "Stylish outerwear made from premium denim.",
+    "price": 55,
+    "imageURL": "https://mrdevelopertestassets.s3.ap-southeast-2.amazonaws.com/denim-jacket.jpg",
+    "sizeOptions": [
+      {
+        "id": 1,
+        "label": "XS"
+      },
+      {
+        "id": 2,
+        "label": "S"
+      },
+      {
+        "id": 3,
+        "label": "M"
+      },
+      {
+        "id": 4,
+        "label": "L"
+      },
+      {
+        "id": 5,
+        "label": "XL"
+      }
+    ]
+  },
+  {
+    "id": 42,
+    "title": "Sports Shoes",
+    "description": "Breathable shoes ideal for sports and running.",
+    "price": 80,
+    "imageURL": "https://mrdevelopertestassets.s3.ap-southeast-2.amazonaws.com/sports-shoes.jpg",
+    "sizeOptions": [
+      {
+        "id": 1,
+        "label": "6"
+      },
+      {
+        "id": 2,
+        "label": "7"
+      },
+      {
+        "id": 3,
+        "label": "8"
+      },
+      {
+        "id": 4,
+        "label": "9"
+      },
+      {
+        "id": 5,
+        "label": "10"
+      }
+    ]
+  },
+  {
+    "id": 43,
+    "title": "Leather Wallet",
+    "description": "Sleek and compact wallet made with genuine leather.",
+    "price": 105,
+    "imageURL": "https://mrdevelopertestassets.s3.ap-southeast-2.amazonaws.com/leather-wallet.jpg",
+    "sizeOptions": []
+  },
+  {
+    "id": 44,
+    "title": "Classic Tee",
+    "description": "Comfortable and versatile, perfect for everyday wear.",
+    "price": 50,
+    "imageURL": "https://mrdevelopertestassets.s3.ap-southeast-2.amazonaws.com/classic-tee.jpg",
+    "sizeOptions": [
+      {
+        "id": 1,
+        "label": "S"
+      },
+      {
+        "id": 2,
+        "label": "M"
+      },
+      {
+        "id": 3,
+        "label": "L"
+      }
+    ]
+  },
+  {
+    "id": 45,
+    "title": "Denim Jacket",
+    "description": "Stylish outerwear made from premium denim.",
+    "price": 50,
+    "imageURL": "https://mrdevelopertestassets.s3.ap-southeast-2.amazonaws.com/denim-jacket.jpg",
+    "sizeOptions": [
+      {
+        "id": 1,
+        "label": "XS"
+      },
+      {
+        "id": 2,
+        "label": "S"
+      },
+      {
+        "id": 3,
+        "label": "M"
+      },
+      {
+        "id": 4,
+        "label": "L"
+      },
+      {
+        "id": 5,
+        "label": "XL"
+      }
+    ]
+  },
+  {
+    "id": 46,
+    "title": "Sports Shoes",
+    "description": "Breathable shoes ideal for sports and running.",
+    "price": 75,
+    "imageURL": "https://mrdevelopertestassets.s3.ap-southeast-2.amazonaws.com/sports-shoes.jpg",
+    "sizeOptions": [
+      {
+        "id": 1,
+        "label": "6"
+      },
+      {
+        "id": 2,
+        "label": "7"
+      },
+      {
+        "id": 3,
+        "label": "8"
+      },
+      {
+        "id": 4,
+        "label": "9"
+      },
+      {
+        "id": 5,
+        "label": "10"
+      }
+    ]
+  },
+  {
+    "id": 47,
+    "title": "Leather Wallet",
+    "description": "Sleek and compact wallet made with genuine leather.",
+    "price": 100,
+    "imageURL": "https://mrdevelopertestassets.s3.ap-southeast-2.amazonaws.com/leather-wallet.jpg",
+    "sizeOptions": []
+  },
+  {
+    "id": 48,
+    "title": "Classic Tee",
+    "description": "Comfortable and versatile, perfect for everyday wear.",
+    "price": 45,
+    "imageURL": "https://mrdevelopertestassets.s3.ap-southeast-2.amazonaws.com/classic-tee.jpg",
+    "sizeOptions": [
+      {
+        "id": 1,
+        "label": "S"
+      },
+      {
+        "id": 2,
+        "label": "M"
+      },
+      {
+        "id": 3,
+        "label": "L"
+      }
+    ]
+  },
+  {
+    "id": 49,
+    "title": "Denim Jacket",
+    "description": "Stylish outerwear made from premium denim.",
+    "price": 70,
+    "imageURL": "https://mrdevelopertestassets.s3.ap-southeast-2.amazonaws.com/denim-jacket.jpg",
+    "sizeOptions": [
+      {
+        "id": 1,
+        "label": "XS"
+      },
+      {
+        "id": 2,
+        "label": "S"
+      },
+      {
+        "id": 3,
+        "label": "M"
+      },
+      {
+        "id": 4,
+        "label": "L"
+      },
+      {
+        "id": 5,
+        "label": "XL"
+      }
+    ]
+  },
+  {
+    "id": 50,
+    "title": "Sports Shoes",
+    "description": "Breathable shoes ideal for sports and running.",
+    "price": 70,
+    "imageURL": "https://mrdevelopertestassets.s3.ap-southeast-2.amazonaws.com/sports-shoes.jpg",
+    "sizeOptions": [
+      {
+        "id": 1,
+        "label": "6"
+      },
+      {
+        "id": 2,
+        "label": "7"
+      },
+      {
+        "id": 3,
+        "label": "8"
+      },
+      {
+        "id": 4,
+        "label": "9"
+      },
+      {
+        "id": 5,
+        "label": "10"
+      }
+    ]
+  }
+]
